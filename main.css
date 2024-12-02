@@ -35,7 +35,6 @@ ul {
   list-style: none;
 }
 
-
 li {
   margin-left: 40px;
   font-family: "Raleway", sans-serif;
@@ -120,7 +119,6 @@ input:not(:placeholder-shown) {
   display: block;
   color: #ff0000b7;
 }
-
 
 .hero-img {
   max-width: 50%;
@@ -302,12 +300,9 @@ input:not(:placeholder-shown) {
   display: block;
 }
 /* في حالة اذا كان العنصر فاضي */
-.item2:not(:has(input:not(:placeholder-shown))) #hiddin{
+.item2:not(:has(input:not(:placeholder-shown))) #hiddin {
   display: none;
 }
-
-
-
 
 /* FOOTER */
 
@@ -340,7 +335,7 @@ footer {
 
 .box1 p img {
   width: 17px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .padding {
@@ -348,7 +343,7 @@ footer {
 }
 
 .padding:hover {
-  color: #2f4f7f;
+  color: #3065f8;
   cursor: pointer;
 }
 
@@ -356,19 +351,28 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  padding: 7px;
 }
 
-.box4 i {
-  padding: 7px;
+.icons {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  color: #f6f6fe;
   border: 1px solid #f6f6fe;
 }
 
-.box4 i:hover {
-  color: #2f4f7f;
+.icons i {
+  color: #f6f6fe;
+}
+
+.icons i:hover {
+  color: #3065f8;
   cursor: pointer;
 }
+
 
 
 /* ====================================== */
@@ -376,35 +380,30 @@ footer {
 /* MEDIA QUERIES */
 
 @media (max-width: 584px) {
-  
   /* NAV */
 
   nav {
     padding: 30px;
   }
-  
+
   .nav-logo {
     width: 80px;
   }
-  
-  
-  
+
   li {
     margin-left: 10px;
     font-size: 15px;
   }
-
 
   /* HERO SECTION */
 
   .hero-img {
     min-width: 100%;
   }
-  
+
   .hero-img img {
     max-width: 100%;
   }
-  
 
   .hero-section {
     flex-direction: column-reverse;
@@ -414,7 +413,6 @@ footer {
     max-width: 100%;
     text-align: center;
   }
-
 
   .hero-title p {
     font-size: 13px;
@@ -428,117 +426,99 @@ footer {
     width: 100%;
   }
 
-/* BODY SECTION */
+  /* BODY SECTION */
 
-.background {
-  background-image: url(pic/bg-curve-mobile.svg);
-  background-size: cover;
-  margin-top: 50px;
-  
-}
+  .background {
+    background-image: url(pic/bg-curve-mobile.svg);
+    background-size: cover;
+    margin-top: 50px;
+  }
 
-.body-section {
-  flex-direction: column-reverse;
-}
+  .body-section {
+    flex-direction: column-reverse;
+  }
 
-.body-img {
-  min-width: 100%;
-}
+  .body-img {
+    min-width: 100%;
+  }
 
+  .body-title {
+    min-width: 100%;
+    margin-top: 40px;
+  }
 
-.body-title {
-  min-width: 100%;
-  margin-top: 40px;
-}
+  .body-title h2 {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
 
-.body-title h2 {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 700;
-}
+  .body-title p {
+    color: #555555;
+    font-size: 13px;
+  }
 
-.body-title p {
-  color: #555555;
-  font-size: 13px;
-}
+  .green-line {
+    justify-content: center;
+    width: 100%;
+  }
 
-.green-line {
-  justify-content: center;
-  width: 100%;
-}
+  .green-line::after {
+    width: 50%;
+  }
 
-.green-line::after {
+  .green-line p {
+    font-size: 13px;
+  }
 
-  width: 50%;
-}
+  .box {
+    margin-top: 30px;
+  }
 
-.green-line p {
-  font-size: 13px;
-}
+  /* BERBOL */
 
-.box {
-  margin-top: 30px;
-}
+  .berbol {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 15px;
+  }
 
+  .item1 {
+    width: 100%;
+    text-align: center;
+  }
 
-/* BERBOL */
+  .item1 h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 
+  .item2 {
+    width: 100%;
+  }
 
-.berbol {
-  height: auto;
-  flex-direction: column;
-  justify-content: center; 
-  padding: 50px;
-  gap: 15px;
-}
+  .item2 input {
+    width: 100%;
+  }
 
-.item1 {
-  width: 100%;
-  text-align: center;
-}
+  .btn {
+    width: 100%;
+  }
 
-.item1 h3 {
-  font-size: 15px;
-  margin-bottom: 20px;
-}
+  /* FOOTER */
 
+  .pic img {
+    width: 170px;
+  }
 
-.item2 {
-  width: 100%;
-}
+  .data {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.item2 input {
-  width: 100%;
-}
-
-
-.btn {
-  width: 100%;
-}
-
-/* FOOTER */
-
-
-
-.pic img {
-  width: 170px;
-}
-
-.data {
-  flex-direction: column;
-  gap: 30px;
-}
-
-.box1 p {
-  font-size: 15px;
-}
-
-
-.box4 {
-  justify-content: center;
-  gap: 20px;
-  margin: 20px;
-}
-
-
+  .box1 p {
+    font-size: 15px;
+  }
 }
